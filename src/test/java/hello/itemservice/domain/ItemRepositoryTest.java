@@ -102,6 +102,7 @@ class ItemRepositoryTest {
         test("temA", null, item1, item2);
         test("itemB", null, item3);
 
+
         //maxPrice 검증
         test(null, 10000, item1);
 
