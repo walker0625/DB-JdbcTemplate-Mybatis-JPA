@@ -89,7 +89,7 @@ public class JpaItemRepositoryV3 implements ItemRepository {
 
         return query.select(item)
                 .from(item)
-                .where(likeItemName(itemName), maxPrice(maxPrice))
+                .where(likeItemName(itemName), maxPrice(maxPrice)) // AND
                 .fetch();
     }
 
